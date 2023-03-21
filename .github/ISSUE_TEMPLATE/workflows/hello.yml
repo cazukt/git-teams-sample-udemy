@@ -1,0 +1,8 @@
+name: Hello,World #ワークフロー名
+# run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push] #イベント
+jobs: #ジョブ
+  my_first_job: #ジョブのID
+    runs-on: ubuntu-latest #ジョブ名
+    steps: #ジョブ内で実行される処理
+      - run: echo "hello,world"
